@@ -1,5 +1,6 @@
-# portfolio
+## portfolio
 Uppgift 3
+Sista tidpunkt för inlämning: 17 jan 2021 23:55
 I Inlämningsuppgift: Portfolio, så ska ni skapa er egna portfoliosida, för att presentera projekt, talanger och visa er potential för potentiella arbetsgivare. Kraven för att klara uppgiften:
 
 - Er sida ska kunna visa flera bilder (av era projekt) i ett typ av galleri.
