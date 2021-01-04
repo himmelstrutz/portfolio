@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Live Resume :: Resume</title>
+    <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/live-resume.css">
+</head>
+
+<body>
+    <header>
+        <button class="btn ml-auto mr-3 ml-md-0 mr-md-auto"><img src="assets/images/logo.png" alt="share" class="btn-img1">
+            MARTIN RESLOW</button>
+        <nav class="collapsible-nav" id="collapsible-nav">
+            <a href="index.html" class="nav-link">HEM</a>
+            <a href="resume.html" class="nav-link active">CV</a>
+            <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
+            <a href="contact.html" class="nav-link">KONTAKT</a>
+            <a href="https://www.linkedin.com/in/martin-reslow/" target="_blank" class="nav-link"><i class="fab fa-linkedin fa-lg"></i></a>
+        </nav>
+        <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
+            data-target="collapsible-nav"><img src="assets/images/hamburger.svg" alt="hamburger"></button>
+    </header>
+    <div class="content-wrapper">
+        
+        <main>
+            
+            <section class="clients-section">
+                <h6 class="section-subtitle">MARTIN RESLOW</h6>
+                <h2 class="section-title">CV</h2>
+                <iframe src="https://indd.adobe.com/embed/8a9f51e5-defb-4ead-ad19-547f93604ce6?startpage=1&amp;allowFullscreen=true" width="920px" height="660px" frameborder="0" allowfullscreen=""></iframe>
+            </section>
+            
+            <section class="testimonial-section">
+                <div id="testimonialCarousel" class="testimonial-carousel carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p class="testimonial-content">Mauris magna sapien, pharetra consectetur fringilla vitae,
+                                interdum sed tortor.</p>
+                            <img src="assets/images/Profile.png" alt="profile" class="testimonial-img">
+                            <p class="testimonial-name">Nout Golstein</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="testimonial-content">Mauris magna sapien, pharetra consectetur fringilla vitae,
+                                interdum sed tortor.</p>
+                            <img src="assets/images/Profile.png" alt="profile" class="testimonial-img">
+                            <p class="testimonial-name">Nout Golstein</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="testimonial-content">Mauris magna sapien, pharetra consectetur fringilla vitae,
+                                interdum sed tortor.</p>
+                            <img src="assets/images/Profile.png" alt="profile" class="testimonial-img">
+                            <p class="testimonial-name">Nout Golstein</p>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+                        <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+                    </ol>
+                </div>
+            </section>
+
+             <footer class="mainFooter">
+                <div class="widget">
+                <div class="widget-content">
+                    <p style="margin-top:1px;margin-bottom:1px;"><img src="assets/images/logo.png" height="24"></p>
+                    <p style="margin-top:1px;margin-bottom:1px;">© Martin Reslow 2020</p>
+                    <p><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;+46 70 203 68 95 &nbsp;<i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Kastellgatan 9, 211 48 Malmö</p>
+                </div></footer>
+        </main>
+    </div>
+    <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendors/@popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/live-resume.js"></script>
+</body>
+
+</html>
