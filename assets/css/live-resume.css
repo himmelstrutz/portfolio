@@ -8193,3 +8193,14 @@ header {
     padding-left: 0 !important; 
     
 }
+.success {
+   display: none;
+   background: #e1f8ed;
+   padding: 20px;
+   margin-top: 16px;
+   margin-bottom: 16px;
+}
+ .success.is-active {
+   display: block;
+}
+

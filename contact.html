@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="assets/css/live-resume.css">
-     <link href="fcf-assets/css/fcf.default.css" rel="stylesheet">
-    <link href="fcf-assets/css/fcf.default-custom.css" rel="stylesheet">
-    <!-- Bootstrap core CSS -->
-    
-
-    
+     <link href="assets/css/fcf.default.css" rel="stylesheet">
+    <link href="assets/css/fcf.default-custom.css" rel="stylesheet">
 </head>
-
 <body>
     <header>
         <button class="btn ml-auto mr-3 ml-md-0 mr-md-auto"><img src="assets/images/logo.png" alt="share" class="btn-img1">
@@ -42,62 +36,76 @@
                 <p class="mb-4">Kontakta oss om du vill prata om ett projekt, vårt arbete eller något annat.</p>
                  <div class="fcf-form-wrap">
         <div id="fcf-form">
-            <form class="fcf-form-class" method="post" action="fcf-assets/fcf.process.php">
+       <!-- form -->
+            <form  action="https://getform.io/f/dd516e3f-cc90-4edd-b507-def3915b6953" method="POST"  accept-charset="UTF-8" name="MR-form">
+          <!--<form class="fcf-form-class" method="post" action="fcf-assets/fcf.process.php">-->
 
                 <div class="field">
                     <label for="Name" class="label has-text-weight-normal">Namn</label>
                     <div class="control">
                         <input type="text" name="Name" id="Name" class="input is-full-width" maxlength="100"
-                            data-validate-field="Name">
+                            required="required">
                     </div>
                 </div>
                 <div class="field">
                     <label for="Email" class="label has-text-weight-normal">E-mail</label>
                     <div class="control">
                         <input type="email" name="Email" id="Email" class="input is-full-width" maxlength="100"
-                            data-validate-field="Email">
+                             required="required">
                     </div>
                 </div>
                 <div class="field">
                     <label for="Phone" class="label has-text-weight-normal">Telefon (frivilligt)</label>
                     <div class="control">
                         <input type="tel" name="Phone" id="Phone" class="input is-full-width" maxlength="30"
-                            data-validate-field="Phone">
+                             >
                     </div>
                 </div>
                 <div class="field">
                     <label for="Message" class="label has-text-weight-normal">Ditt meddelande</label>
                     <div class="control">
                         <textarea name="Message" id="Message" class="textarea" maxlength="3000" rows="5"
-                            data-validate-field="Message"></textarea>
+                             required="required"></textarea>
                     </div>
                 </div>
-                <div id="fcf-status" class="fcf-status"></div>
+                <!--<div id="fcf-status" class="fcf-status"></div>-->
+                <div class="success">Tack för ditt meddelande!</div> 
                 <div class="field">
                     <div class="buttons">
                         <button id="fcf-button" type="submit" class="button is-link is-medium is-fullwidth">Skicka meddelande</button>
                     </div>
                 </div>
-                <!-- You MUST retain the attribution below -->
-                <div class="fcf-attribution">Contact Form by <a href="https://www.freecontactform.com/" class="fcf-attribution-link">FreeContactForm</a></div>
-            </form>
+               <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+               <script>
+        $("#ajaxForm").submit(function(e){
+  e.preventDefault();
+  var action = $(this).attr("action");
+  $.ajax({
+    type: "POST",
+    url: action,
+    crossDomain: true,
+    data: new FormData(this),
+    dataType: "json",
+    contentType: "multipart/form-data",
+    processData: false,
+    contentType: false,
+    headers: {
+      "Accept": "application/json"
+    }
+  }).done(function() {
+     $('.success').addClass('is-active');
+  }).fail(function() {
+     alert('An error occurred please try again later.')
+  });
+});
+    </script>
        </div>
-        <div id="fcf-thank-you" style="display:none">
-            <!-- Thank you message goes below -->
-            <strong>Tack!</strong>
-            <p>Jag kommer kontakta dig snart.</p>
-            <!-- Thank you message goes above -->
-        </div>
     </div>
-    <script src="fcf-assets/js/fcf.just-validate.min.js"></script>
-    <script src="fcf-assets/js/fcf.form.js"></script>
-    <!-- the lines above are needed -->
 </div>
 
 <!-- Kartan-->
 <div class="col-lg-6">
                 <h5 class="section-title">HÄR FINNS JAG</h5>
-
                 <div class="map-wrapper embed-responsive embed-responsive-16by9">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2254.193802661395!2d12.991672215693693!3d55.59864068051237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653a15411b105cb%3A0x4dcb42fae7d0e269!2sKastellgatan%209%2C%20211%2048%20Malm%C3%B6!5e0!3m2!1ssv!2sse!4v1609759292691!5m2!1ssv!2sse" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
@@ -120,5 +128,4 @@
     <script src="assets/vendors/entry/jq.entry.min.js"></script>
     <script src="assets/js/live-resume.js"></script>
 </body>
-
 </html>
