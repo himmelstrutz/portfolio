@@ -8204,3 +8204,12 @@ header {
    display: block;
 }
 
+main .testimonial-section {
+    background-color: #080808;
+    color: #ffffff;
+    margin-bottom: 26px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+}

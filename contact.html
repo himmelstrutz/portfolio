@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/css/live-resume.css">
      <link href="assets/css/fcf.default.css" rel="stylesheet">
     <link href="assets/css/fcf.default-custom.css" rel="stylesheet">
+
+    
 </head>
 <body>
     <header>
@@ -37,7 +39,7 @@
                  <div class="fcf-form-wrap">
         <div id="fcf-form">
        <!-- form -->
-            <form  action="https://getform.io/f/dd516e3f-cc90-4edd-b507-def3915b6953" method="POST"  accept-charset="UTF-8" name="MR-form">
+            <form id="ajaxForm" action="https://getform.io/f/dd516e3f-cc90-4edd-b507-def3915b6953" method="POST"  accept-charset="UTF-8" name="MR-form">
           <!--<form class="fcf-form-class" method="post" action="fcf-assets/fcf.process.php">-->
 
                 <div class="field">
@@ -76,29 +78,7 @@
                     </div>
                 </div>
                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-               <script>
-        $("#ajaxForm").submit(function(e){
-  e.preventDefault();
-  var action = $(this).attr("action");
-  $.ajax({
-    type: "POST",
-    url: action,
-    crossDomain: true,
-    data: new FormData(this),
-    dataType: "json",
-    contentType: "multipart/form-data",
-    processData: false,
-    contentType: false,
-    headers: {
-      "Accept": "application/json"
-    }
-  }).done(function() {
-     $('.success').addClass('is-active');
-  }).fail(function() {
-     alert('An error occurred please try again later.')
-  });
-});
-    </script>
+               
        </div>
     </div>
 </div>
@@ -127,5 +107,7 @@
     <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/vendors/entry/jq.entry.min.js"></script>
     <script src="assets/js/live-resume.js"></script>
+
+
 </body>
 </html>

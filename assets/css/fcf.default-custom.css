@@ -65,6 +65,7 @@ strong {
 .button.is-link {
     background-color: #00B5E5;
     color: #ffffff;
+    margin-bottom: 64px;
 }
 
 .button.is-link:hover {
