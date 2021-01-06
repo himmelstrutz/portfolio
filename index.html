@@ -6,24 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Martin Reslow :: Hem</title>
-    <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
+
+    
+    
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <!-- My styles-->
     <link rel="stylesheet" href="assets/css/live-resume.css">
+    <!-- Carousel styles -->
+    <link href="assets/css/carousel.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<!-- Font awesome-->
+    <link rel="stylesheet" href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
+   
+    
     <!-- favico-->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+<!--<link rel="manifest" href="/site.webmanifest">-->
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
+
+<style>
+    /*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+ .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+
+
+
+    </style>
+
+    
 </head>
 
 <body>
     <header>
-         <button class="btn ml-auto mr-3 ml-md-0 mr-md-auto"><img src="assets/images/logo.png" alt="share" class="btn-img1">
+        <button class="btn ml-auto mr-3 ml-md-0 mr-md-auto"><img src="assets/images/logo.png" alt="share" class="btn-img1">
             MARTIN RESLOW</button>
+            
         <nav class="collapsible-nav" id="collapsible-nav">
             <a href="index.html" class="nav-link active">HEM</a>
             <a href="resume.html" class="nav-link">CV</a>
@@ -38,121 +78,92 @@
 
         <main>
 
-            <section class="intro-section">
-                <h2 class="section-title">Hello, Daisy Murphy!</h2>
-                <!--<p>I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print
-                    media. I enjoy turning complex problems into simple, beautiful and intuitive designs. My job is to
-                    build your website so that it is functional and user-friendly but at the same time attractive.
-                    Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use.
-                    My aim is to bring across your message and identity in the most creative way. I created web design
-                    for many famous brand companies.</p>-->
-                    <div id="testimonialCarousel" class="testimonial-carousel carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <p class="testimonial-content">Mauris magna sapien, pharetra consectetur fringilla vitae,
-                                interdum sed tortor.</p>
-                            <img src="assets/images/Profile.png" alt="profile" class="testimonial-img">
-                            <p class="testimonial-name">Nout Golstein</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p class="testimonial-content">Mauris magna sapien, pharetra consectetur fringilla vitae,
-                                interdum sed tortor.</p>
-                            <img src="assets/images/Profile.png" alt="profile" class="testimonial-img">
-                            <p class="testimonial-name">Nout Golstein</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p class="testimonial-content">Mauris magna sapien, pharetra consectetur fringilla vitae,
-                                interdum sed tortor.</p>
-                            <img src="assets/images/Profile.png" alt="profile" class="testimonial-img">
-                            <p class="testimonial-name">Nout Golstein</p>
-                        </div>
-                    </div>
-                    <ol class="carousel-indicators">
-                        <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#testimonialCarousel" data-slide-to="1"></li>
-                        <li data-target="#testimonialCarousel" data-slide-to="2"></li>
-                    </ol>
-                </div>
-                <a href="#!" class="btn btn-primary btn-hire-me">HIRE ME</a>
-            </section>
-            <section class="resume-section">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h6 class="section-subtitle">RESUME</h6>
-                        <h2 class="section-title">EDUCATION</h2>
-                        
-                    </div>
-                    <div class="col-lg-6">
-                        <h6 class="section-subtitle">RESUME</h6>
-                        <h2 class="section-title">Experience</h2>
-                        
-                    </div>
-                </div>
-            </section>
-            <section class="services-section">
-                <h6 class="section-subtitle">WHAT I DO</h6>
-                <h2 class="section-title">SERVICES</h2>
-                <div class="row">
-                    <div class="media service-card col-lg-6">
-                        <div class="service-icon">
-                            <img src="assets/images/001-target.svg" alt="target">
-                        </div>
-                        <div class="media-body">
-                            <h5 class="service-title">web designing</h5>
-                            <p class="service-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed
-                                tortor.</p>
-                        </div>
-                    </div>
-                    <div class="media service-card col-lg-6">
-                        <div class="service-icon">
-                            <img src="assets/images/003-idea.svg" alt="bulb">
-                        </div>
-                        <div class="media-body">
-                            <h5 class="service-title">Graphic design</h5>
-                            <p class="service-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed
-                                tortor.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media service-card col-lg-6">
-                        <div class="service-icon">
-                            <img src="assets/images/002-development.svg" alt="development">
-                        </div>
-                        <div class="media-body">
-                            <h5 class="service-title">Development</h5>
-                            <p class="service-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed
-                                tortor.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media service-card col-lg-6">
-                        <div class="service-icon">
-                            <img src="assets/images/004-smartphone.svg" alt="smartphone">
-                        </div>
-                        <div class="media-body">
-                            <h5 class="service-title">Mobile design</h5>
-                            <p class="service-description">Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed
-                                tortor.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+       <img src="assets/images/IntroMR.png">
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Martin Reslow</h1>
+            <p>Grafisk designer. Illustratör. UX Designer.</p>
+            <p><a class="btn btn-lg btn-primary" href="portfolio.html" role="button" target="_blanket">Portfolio</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+         <img src="assets/images/memorypic.jpg">
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Vad vet du om Martin?</h1>
+            <p>Spela ett parti "Martin Memory" och få reda på vad han kan.</p>
+            <p><a class="btn btn-lg btn-primary" href="memory.html" role="button">Spela Memory</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#cccccc"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+
+            
+            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <h1 class="display-4 fw-normal">Punny headline</h1>
+      <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
+      <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+  <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
             
 
-             <footer class="mainFooter">
-                <div class="widget">
-                <div class="widget-content">
-                    <p style="margin-top:1px;margin-bottom:1px;"><img src="assets/images/logo.png" height="24"></p>
-                    <p style="margin-top:1px;margin-bottom:1px;">© Martin Reslow 2020</p>
-                    <p><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;+46 70 203 68 95 &nbsp;<i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Kastellgatan 9, 211 48 Malmö</p>
-                </div></footer>
+             <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2021 Martin Reslow </p>
+  </footer>
         </main>
     </div>
+    
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="assets/js/live-resume.js"></script>
     <script src="assets/vendors/@popperjs/core/dist/umd/popper-base.min.js"></script>
     <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/js/live-resume.js"></script>
+    <script src="assets/vendors/entry/jq.entry.min.js"></script>
+    
+    
+    
 </body>
 
 </html>

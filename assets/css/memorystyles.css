@@ -8,8 +8,8 @@ body {
   /* height: 100vh; */
   display: flex;
   background: #2F4858;
-  background-image: url(../images/bg-memory.svg);
-  background-repeat: no-repeat;
+  /*background-image: url(../images/bg-memory.svg);
+  background-repeat: no-repeat;*/
 }
 
 .memory-game {
