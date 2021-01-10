@@ -8215,6 +8215,10 @@ li {
     font-weight: 300;
 }
 
+figcaption{
+  text-align: center;
+}
+
 /* Featurettes
 ------------------------- */
 
@@ -8230,6 +8234,11 @@ li {
   letter-spacing: -.05rem;
 }
 
+@media (max-width: 767px){
+img {
+    max-width: 90%;
+}
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -8244,7 +8253,7 @@ li {
 
 @media (min-width: 62em) {
   .featurette-heading {
-    margin-top: 7rem;
+    margin-top: 1rem;
   }
 }
 
