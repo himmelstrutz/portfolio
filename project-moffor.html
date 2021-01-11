@@ -4,21 +4,21 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
-  <link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css' rel='stylesheet'><!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"><!-- Google fonts -->
-  <link href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><!-- <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">-->
-  <link href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="assets/css/live-resume.css" rel="stylesheet"><!-- favico-->
-  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
-  <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
-  <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-  <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
-  <link href="/site.webmanifest" rel="manifest">
-  <link href="/safari-pinned-tab.svg" rel="mask-icon">
   <meta content="#da532c" name="msapplication-TileColor">
   <meta content="#ffffff" name="theme-color">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/css/live-resume.css" rel="stylesheet">
+  <!-- favico-->
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+  <link href="favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+  <link href="favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+  <link href="safari-pinned-tab.svg" rel="mask-icon">
   <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -53,18 +53,23 @@
         </section>
         <div class="row featurette">
           <div class="col-md-7">
-            <!--<h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>-->
             <h6>Ljudbok (dubbel-CD) av Lars Yngve, Grafisk form & illustrationer: Martin Reslow. Bokförlaget Håll Truten 2018.</h6>
             <p class="lead">En "dubbel-sede" med historier om Nils-Ude, upplästa av Lars Yngve. Två spår gästas av Peps Persson och Björn Ranelid. Mustig humor på gammelskånska.<br>
-            <a class="btn btn-lg btn-primary" href="https://www.bokus.com/bok/9789163989025/moffor-a-jau/" role="button" target="_blank">Köp på Bokus!</a></p><!--<a class="btn btn-primary" href="https://xd.adobe.com/view/a5083bb6-c900-4170-8092-4a78f81c0598-f05b/" role="button" target="_blank">Prototypen "Vi ses!"</a>-->
+
+            <a class="btn btn-lg btn-primary" href="https://www.bokus.com/bok/9789163989025/moffor-a-jau/" role="button" target="_blank">Köp på Bokus!</a></p>
+            <h4>Lyssna på Nils-Udes Blueskatarr med Peps Persson</h4>
+          <p class="lead"><audio controls>
+  <source src="assets/audio/Blueskatarr.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio></p>
           </div>
           <div class="col-md-5">
-            <img alt="Moffor å jau" src="assets/images/moffor1.jpg" title="Moffor å jau" width="500"> <!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>-->
+            <img alt="Moffor å jau" src="assets/images/moffor1.jpg" title="Moffor å jau" width="500"> 
           </div>
         </div>
         <hr class="featurette-divider">
       </div>
-      <h2>Reklambilder för boken</h2>
+      <h2>Ljudboken</h2>
       <div class="row" data-target="#exampleModal" data-toggle="modal" id="gallery">
         <div class="col-12 col-sm-6 col-lg-3"><img alt="Moffor 1" class="w-100" data-slide-to="0" data-target="#carouselExample" src="assets/images/moffor1.jpg"></div>
         <div class="col-12 col-sm-6 col-lg-3"><img alt="Moffor 1" class="w-100" data-slide-to="0" data-target="#carouselExample" src="assets/images/moffor2.jpg"></div>
@@ -72,10 +77,8 @@
         <div class="col-12 col-sm-6 col-lg-3"><img alt="First slide" class="w-100" data-slide-to="2" data-target="#carouselExample" src="assets/images/moffor4.jpg"></div>
         <div class="col-12 col-sm-6 col-lg-3"><img alt="First slide" class="w-100" data-slide-to="3" data-target="#carouselExample" src="assets/images/moffor5.jpg"></div>
         <div class="col-12 col-sm-6 col-lg-3"><img alt="First slide" class="w-100" data-slide-to="3" data-target="#carouselExample" src="assets/images/moffor6.jpg"></div>
-      </div><!-- Modal -->
-      <!-- 
-This part is straight out of Bootstrap docs. Just a carousel inside a modal.
--->
+      </div>
+      <!-- Modal --><!-- This part is straight out of Bootstrap docs. Just a carousel inside a modal. -->
       <div aria-hidden="true" class="modal fade" id="exampleModal" role="dialog" tabindex="-1">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -111,7 +114,7 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
       <hr class="featurette-divider">
       <div class="row featurette">
         <div class="col-md-7">
-          <p class="lead"></p>
+          
         </div>
       </div>
       <footer class="container">
@@ -125,7 +128,8 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
   <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/popper.min.js'>
   </script> 
   <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'>
-  </script> <!-- Option 1: Bootstrap Bundle with Popper -->
+  </script> 
+  <!-- Option 1: Bootstrap Bundle with Popper -->
    
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
   </script> 
@@ -136,6 +140,6 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
   <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js">
   </script> 
   <script src="assets/js/live-resume.js">
-  </script> --&gt;
+  </script> 
 </body>
 </html>
